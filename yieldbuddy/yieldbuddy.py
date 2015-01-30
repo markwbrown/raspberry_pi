@@ -7,6 +7,7 @@ import time
 from datetime import datetime
 #import MySQLdb
 import sqlite3 as lite
+import 
 import smtplib
 import random
 import string
@@ -33,7 +34,7 @@ def update_sql(query):
 	cursor.execute(query)
 	
 		# Commit changes in the database
-	#db.commit()
+	db.commit()
 	#except:
 		# Rollback in case there is any error
 		#db.rollback()
